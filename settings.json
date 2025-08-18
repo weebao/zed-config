@@ -3,6 +3,7 @@
   "features": {
     "edit_prediction_provider": "none"
   },
+  "pane_split_direction_vertical": "right",
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
