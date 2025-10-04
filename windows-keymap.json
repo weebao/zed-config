@@ -34,15 +34,13 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
+      "alt-j": "editor::MoveLineUp",
+      "alt-k": "editor::MoveLineDown",
+      "shift-l": "tab_switcher::Toggle",
       "space e": "workspace::ToggleLeftDock",
       "space p": "editor::Format",
-      "shift-l": "tab_switcher::Toggle",
-      "shift-j": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp",
       "space v": "pane::SplitRight",
-      "space w": "pane::CloseActiveItem",
-      "space h": "workspace::ActivatePaneLeft",
-      "space l": "workspace::ActivatePaneRight"
+      "space w": "pane::CloseActiveItem"
     }
   },
   {
@@ -54,14 +52,11 @@
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
+      "shift-l": "tab_switcher::Toggle",
       "space e": "workspace::ToggleLeftDock",
       "space p": "editor::Format",
-      "space space": "file_finder::Toggle",
-      "shift-l": "tab_switcher::Toggle",
       "space v": "pane::SplitRight",
-      "space w": "pane::CloseActiveItem",
-      "space h": "workspace::ActivatePaneLeft",
-      "space l": "workspace::ActivatePaneRight"
+      "space w": "pane::CloseActiveItem"
     }
   },
   {
@@ -74,12 +69,6 @@
     "context": "Terminal",
     "bindings": {
       "ctrl-shift-`": "workspace::NewTerminal"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "ctrl-l l": "zed::OpenKeymap"
     }
   },
   {
