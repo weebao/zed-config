@@ -1,0 +1,97 @@
+{
+  "calls": {
+    "mute_on_join": true
+  },
+  "base_keymap": "JetBrains",
+  "show_edit_predictions": false,
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+  "buffer_font_size": 19.0,
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "pane_split_direction_vertical": "right",
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
+  // "soft_wrap": "bounded",
+  "preferred_line_length": 70,
+  "theme": "Github Dark",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
+    },
+    "always_allow_tool_actions": true
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ty", "!basedpyright"]
+    }
+  },
+  "lsp": {
+    "ty": {
+      "binary": {
+        "path": "/home/baoro/.local/bin/ty",
+        "arguments": ["server"]
+      },
+      "settings": {
+        "diagnosticMode": "workspace",
+        "experimental": {
+          "autoImport": true,
+          "rename": true
+        },
+        "inlayHints": {
+          "variableTypes": false
+        }
+      }
+    },
+    "metals": {
+      "settings": {
+        "inlayHints": {
+          "inferredTypes": {
+            "enable": true
+          }
+        },
+        "implicitArguments": {
+          "enable": true
+        },
+        "implicitConversions": {
+          "enable": true
+        },
+        "typeParameters": {
+          "enable": true
+        },
+        "hintsInPatternMatch": {
+          "enable": true
+        }
+      }
+    }
+  },
+  "vim_mode": true,
+  "terminal": {
+    "dock": "bottom",
+    "font_family": "JetBrainsMonoNL Nerd Font Mono"
+  }
+}
+
+
